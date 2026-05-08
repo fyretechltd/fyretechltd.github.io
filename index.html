@@ -3,157 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fyretech Ltd</title>
+    <meta name="description" content="Fyretech Ltd — Innovation, Software, Design. A digital venture studio.">
+    <title>Fyretech — fyretech.co.uk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        /* Minimalist Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        /* Modern Reset */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg:     #0a0a0a; /* Deep tech black */
+            --ink:    #f4f4f2; /* Off-white for readability */
+            --muted:  #888888;
+            --light:  #222222;
+            --accent: #ff4d00; /* Subtle 'Fyre' orange-red */
         }
+
+        html, body { height: 100%; overflow: hidden; }
 
         body {
-            background-color: #000;
-            color: #fff;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 300;
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 0 28px;
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            height: 100%;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
-            padding: 40px 20px;
+            justify-content: center;
         }
 
-        header {
-            max-width: 900px;
-            width: 100%;
-            margin: 0 auto;
-            padding-bottom: 100px;
-        }
+        /* ── Logo ── */
+        .logo-mark { margin-bottom: 20px; }
 
-        main {
-            max-width: 900px;
-            width: 100%;
-            margin: 0 auto;
-            flex-grow: 1;
-        }
-
-        .logo {
-            font-size: 1.2rem;
-            font-weight: 700;
-            letter-spacing: 2px;
+        .logo-fyi {
+            font-family: 'DM Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.3em;
             text-transform: uppercase;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 4px;
         }
 
-        h1 {
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 40px;
-            letter-spacing: -2px;
-        }
-
-        .description {
-            font-size: 1.25rem;
-            max-width: 600px;
-            color: #a0a0a0; /* Subtle grey for secondary text */
-            margin-bottom: 80px;
-        }
-
-        .section-label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #555;
-            margin-bottom: 20px;
+        .logo-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 44px;
+            font-weight: 500;
+            color: var(--ink);
+            line-height: 1;
             display: block;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 60px;
-            margin-bottom: 100px;
+        .verticals {
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            color: var(--ink);
+            margin-bottom: 6px;
         }
 
-        .project-slot {
-            border-top: 1px solid #333;
-            padding-top: 20px;
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 16px;
+            color: var(--muted);
+            margin-bottom: 40px;
         }
 
-        .project-slot h3 {
-            font-size: 1rem;
-            margin-bottom: 10px;
-        }
+        /* ── Verticals ── */
+        .vertical { margin-bottom: 26px; }
 
-        .project-slot p {
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-        footer {
-            max-width: 900px;
-            width: 100%;
-            margin: 0 auto;
-            padding-top: 40px;
-            border-top: 1px solid #222;
+        .vertical-label {
+            font-family: 'DM Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 4px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            font-size: 0.8rem;
-            color: #555;
+            gap: 12px;
         }
 
-        a {
-            color: #fff;
+        .vertical-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--light);
+        }
+
+        .vertical-desc {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        /* ── Social icons ── */
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 36px;
+            margin-top: 32px;
+        }
+
+        .social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--ink);
+            transition: color 0.15s;
             text-decoration: none;
-            transition: opacity 0.2s;
         }
 
-        a:hover {
-            opacity: 0.6;
+        .social a:hover { color: var(--accent); }
+
+        .social a svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+            display: block;
         }
 
-        @media (max-width: 600px) {
-            header { padding-bottom: 60px; }
-            h1 { margin-bottom: 30px; }
+        /* ── Footer ── */
+        footer {
+            margin-top: 28px;
+            font-family: 'DM Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            color: #444;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">FYRETECH</div>
-    </header>
+<div class="logo-mark">
+    <span class="logo-fyi">EST. 2026</span>
+    <span class="logo-name">Fyretech</span>
+</div>
 
-    <main>
-        <section>
-            <h1>Engineering digital<br>momentum.</h1>
-            <p class="description">
-                Fyretech Ltd is a UK-based venture studio and parent company for a collection of digital experiments, tools, and platforms.
-            </p>
-        </section>
+<p class="verticals">Ideation · Software · Design</p>
+<p class="tagline">Engineering momentum through digital experiments.</p>
 
-        <span class="section-label">Pipeline</span>
-        <div class="grid">
-            <div class="project-slot">
-                <h3>Project Alpha</h3>
-                <p>Stealth Mode. Research & Development Phase.</p>
-            </div>
-            <div class="project-slot">
-                <h3>Project Beta</h3>
-                <p>Ideation Phase. Focused on internal productivity.</p>
-            </div>
-            <div class="project-slot">
-                <h3>Inquiry</h3>
-                <p><a href="mailto:hello@fyretech.co.uk">hello@fyretech.co.uk</a></p>
-            </div>
-        </div>
-    </main>
+<div class="vertical">
+    <div class="vertical-label">Venture Studio</div>
+    <p class="vertical-desc">A central laboratory for building and scaling digital products, from internal productivity tools to consumer platforms.</p>
+</div>
 
-    <footer>
-        <div>&copy; 2026 FYRETECH LTD</div>
-        <div>LONDON, UK</div>
-    </footer>
+<div class="vertical">
+    <div class="vertical-label">Software Engineering</div>
+    <p class="vertical-desc">Specialising in clean, high-performance web architecture and intuitive user experiences.</p>
+</div>
+
+<div class="vertical">
+    <div class="vertical-label">Stealth Projects</div>
+    <p class="vertical-desc">Currently developing a suite of tools focused on automation and digital connectivity. Releases scheduled for Q4.</p>
+</div>
+
+<div class="social">
+    <!-- GitHub -->
+    <a href="https://github.com/fyretechltd" target="_blank" rel="noopener" title="GitHub">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+
+    <!-- Email (Replaced Instagram with Email for business) -->
+    <a href="mailto:contact@fyretech.co.uk" title="Email">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.179 10-8.179V19H2z"/></svg>
+    </a>
+</div>
+
+<footer>Fyretech Ltd</footer>
 
 </body>
 </html>
