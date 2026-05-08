@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyretech Ltd</title>
+    <style>
+        /* Minimalist Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        header {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 100px;
+        }
+
+        main {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            flex-grow: 1;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 40px;
+            letter-spacing: -2px;
+        }
+
+        .description {
+            font-size: 1.25rem;
+            max-width: 600px;
+            color: #a0a0a0; /* Subtle grey for secondary text */
+            margin-bottom: 80px;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #555;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 60px;
+            margin-bottom: 100px;
+        }
+
+        .project-slot {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+
+        .project-slot h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .project-slot p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 40px;
+            border-top: 1px solid #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.6;
+        }
+
+        @media (max-width: 600px) {
+            header { padding-bottom: 60px; }
+            h1 { margin-bottom: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">FYRETECH</div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Engineering digital<br>momentum.</h1>
+            <p class="description">
+                Fyretech Ltd is a UK-based venture studio and parent company for a collection of digital experiments, tools, and platforms.
+            </p>
+        </section>
+
+        <span class="section-label">Pipeline</span>
+        <div class="grid">
+            <div class="project-slot">
+                <h3>Project Alpha</h3>
+                <p>Stealth Mode. Research & Development Phase.</p>
+            </div>
+            <div class="project-slot">
+                <h3>Project Beta</h3>
+                <p>Ideation Phase. Focused on internal productivity.</p>
+            </div>
+            <div class="project-slot">
+                <h3>Inquiry</h3>
+                <p><a href="mailto:hello@fyretech.co.uk">hello@fyretech.co.uk</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>&copy; 2026 FYRETECH LTD</div>
+        <div>LONDON, UK</div>
+    </footer>
+
+</body>
+</html>
