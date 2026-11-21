@@ -9,7 +9,7 @@ We design, build and launch apps, websites and software, for people and for busi
 
 Fyre Tech Ltd is home to a range of digital projects. It's where we design, code and launch the ideas we want to see in the world.
 
-We make apps for iPhone, iPad, Mac and Android, along with websites, web apps and other software.
+We make apps, games, software and web tools.
 
 ## How we work
 
