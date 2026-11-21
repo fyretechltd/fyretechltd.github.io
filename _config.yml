@@ -1,0 +1,9 @@
+title: Fyre Tech Ltd
+description: We design, build and launch apps, websites and software, for people and for businesses.
+url: https://fyretech.co.uk
+email: contact@fyretech.co.uk
+
+markdown: kramdown
+
+exclude:
+  - README.md
