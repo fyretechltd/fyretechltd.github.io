@@ -8,9 +8,9 @@ Website for Fyre Tech Ltd, published at https://fyretech.co.uk by GitHub Pages u
 _config.yml              site settings
 _layouts/default.html    shared page structure (header, main, footer)
 _layouts/app.html        layout for app pages written in Markdown
-_includes/               header, footer and navigation links
+_includes/               header, footer, navigation links and icons
 _data/projects.yml       list shown on /projects/
-assets/css/style.css     the only stylesheet
+_includes/style.css      the only stylesheet, inlined into every page
 index.md                 /
 projects.md              /projects/
 contact.md               /contact/
