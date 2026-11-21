@@ -192,17 +192,23 @@ a:hover {
 .site-footer {
   padding: 2rem 0 3rem;
   font-size: 0.875rem;
+  text-align: center;
 }
 
 .site-footer ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   padding: 0;
   list-style: none;
 }
 
 .site-footer p {
   margin: 0;
+}
+
+.site-footer .icon {
+  display: block;
 }
