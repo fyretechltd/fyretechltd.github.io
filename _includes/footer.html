@@ -2,5 +2,10 @@
   <nav aria-label="Footer">
     {% include nav-links.html %}
   </nav>
+  <ul class="social">
+    <li><a href="https://www.linkedin.com/company/fyre-tech-ltd/" aria-label="LinkedIn">{% include icons/linkedin.svg %}</a></li>
+    <li><a href="https://github.com/fyretechltd" aria-label="GitHub">{% include icons/github.svg %}</a></li>
+    <li><a href="mailto:{{ site.email }}" aria-label="Email">{% include icons/email.svg %}</a></li>
+  </ul>
   <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
 </footer>
