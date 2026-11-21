@@ -31,24 +31,29 @@ body {
   padding: 1.5rem 0;
 }
 
-.site-name,
-.site-name a {
-  color: #000;
+.site-name {
+  margin: 0;
+  font-size: 1rem;
   font-weight: 600;
+  line-height: 1.6;
+}
+
+.site-name a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #000;
   text-decoration: none;
 }
 
-/* On the home page the site name is the h1; keep it looking the same */
-h1.site-name {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.6;
+.site-name img {
+  display: block;
 }
 
 .menu summary {
   display: flex;
   align-items: center;
-  height: 1.6rem;
+  height: 32px;
   list-style: none;
   cursor: pointer;
 }
