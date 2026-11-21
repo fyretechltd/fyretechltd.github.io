@@ -1,5 +1,9 @@
 <header class="site-header">
+  {% if page.url == "/" %}
+  <h1 class="site-name"><a href="/">{{ site.title }}</a></h1>
+  {% else %}
   <a class="site-name" href="/">{{ site.title }}</a>
+  {% endif %}
   <details class="menu">
     <summary><span class="menu-icon" aria-hidden="true"></span><span class="visually-hidden">Menu</span></summary>
     <nav aria-label="Main">

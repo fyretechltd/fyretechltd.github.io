@@ -31,10 +31,18 @@ body {
   padding: 1.5rem 0;
 }
 
-.site-name {
+.site-name,
+.site-name a {
   color: #000;
   font-weight: 600;
   text-decoration: none;
+}
+
+/* On the home page the site name is the h1; keep it looking the same */
+h1.site-name {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .menu summary {
