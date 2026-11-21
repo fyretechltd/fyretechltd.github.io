@@ -3,8 +3,6 @@ layout: default
 title: Fyre Tech Ltd
 ---
 
-# Fyre Tech Ltd
-
 We design, build and launch apps, websites and software, for people and for businesses.
 
 ## What we do
